@@ -2,15 +2,18 @@
 // Nom du projet: Jeu du nombre à deviner
 // Nom du fichier: JeuNombreADeviner.cpp
 // Version : 1.0
-// Nom du programmeur: MP Pinaud
+// Nom du programmeur: G Oglan
 // Date de création : 25/01/2021
 // Rôle du fichier: Contient le code des fonctions du jeu
 // Nom des composants utilises: JeuNombreADeviner.h
 //                              iostream
 //                              ctime
+//                              cstdlib
 // Historique du fichier:
 /*************************************************/
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 #include "../include/JeuNombreAdeviner.h"
 
@@ -23,7 +26,10 @@ using namespace std;
 
 void InitJoueur(TJoueur& joueurAcreer, string un_nom)
 {
-    //A COMPLETER
+    joueurAcreer.nbTentatives = 0;
+    joueurAcreer.nbPartiesJouees = 0;
+    joueurAcreer.nbPartiesGagnees = 0;
+    joueurAcreer.nom = un_nom;
 }
 
 
@@ -33,8 +39,9 @@ void InitJoueur(TJoueur& joueurAcreer, string un_nom)
 
 int TirerNombreMystere()
 {
-    //A COMPLETER
-        return -1;
+	srand((int)time(0));
+    int r = (rand() % 11);
+	return r;
 }
 
 
@@ -47,7 +54,22 @@ int TirerNombreMystere()
 
 void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 {
-    //A COMPLETER
+    int nombre_propose;
+    int i;
+    i = 0;
+    nombre_propose = -1;
+    while (i < 5)
+    {
+    cin >> nombre_propose;
+    i++;
+    joueurAcreer.nbTentatives++;
+    if nombre_propose == nombreADeviner
+    {
+        (cout << "Tu as gagne !!!")
+        joueurAcreer.nbPartiesJouees++;
+        joueurAcreer.nbPartiesGagnees++;
+    }
+    }
 }
 
 
