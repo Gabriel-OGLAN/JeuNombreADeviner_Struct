@@ -40,35 +40,51 @@ void InitJoueur(TJoueur& joueurAcreer, string un_nom)
 int TirerNombreMystere()
 {
 	srand((int)time(0));
-    int r = (rand() % 11);
-	return r;
+    int nombreADeviner = (rand() % 11);
+	return nombreADeviner;
 }
 
 
 // Nom :JouerPartie
 // Rôle : Fait jouer une partie au joueur passé en paramètre
 //        A la fin, met à jour les informations du joueur
-// Paramètres d'entrée:
-// Paramètres de sortie:
-// Paramètres d'entrée/sortie :
+// Paramètres d'entrée: Le joueur qui joue et le nombre à deviner
+// Paramètres de sortie: aucun
+// Paramètres d'entrée/sortie : Les infos du joueur
 
 void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 {
-    int nombre_propose;
-    int i;
+    int nombre_propose; // Ce sera le nombre que devinera le joueur à chaque tentative
+    int i; // Ce sera le nombre de tentatives effectuées par le joueur
     i = 0;
     nombre_propose = -1;
     while (i < 5)
     {
+    cout << "Choisis un nombre entre 0 et 10 !\n";
     cin >> nombre_propose;
-    i++;
-    joueurAcreer.nbTentatives++;
-    if nombre_propose == nombreADeviner
+    if (nombre_propose == nombreADeviner)
     {
-        (cout << "Tu as gagne !!!")
-        joueurAcreer.nbPartiesJouees++;
-        joueurAcreer.nbPartiesGagnees++;
+        (cout << "Tu as gagne !!!\n");
+        un_joueur.nbPartiesJouees++;
+        un_joueur.nbPartiesGagnees++;
+        un_joueur.nbTentatives = un_joueur.nbTentatives + i;
     }
+    if (nombre_propose >= nombreADeviner)
+    {
+        (cout << "Plus petit !!!\n");
+        i++;
+    }
+    if (nombre_propose <= nombreADeviner)
+    {
+        (cout << "Plus grand !!!\n");
+        i++;
+    }
+    }
+    if (i == 5)
+    {
+        cout << "Tu as perdu !!!\n";
+        un_joueur.nbPartiesJouees++;
+        un_joueur.nbTentatives = un_joueur.nbTentatives + i;
     }
 }
 

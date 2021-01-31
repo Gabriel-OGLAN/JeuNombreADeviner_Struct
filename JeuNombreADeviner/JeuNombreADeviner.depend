@@ -34,3 +34,16 @@
 	<ctime>
 	"../include/JeuNombreAdeviner.h"
 
+1611560940 source:c:\users\disquedurdupoker\desktop\nouveau dossier\jeunombreadeviner_struct-dev\src\mainjeunombreadeviner.cpp
+	<iostream>
+	"../include/JeuNombreADeviner.h"
+
+1612101512 c:\users\disquedurdupoker\desktop\nouveau dossier\jeunombreadeviner_struct-dev\include\jeunombreadeviner.h
+	<string>
+
+1612102090 source:c:\users\disquedurdupoker\desktop\nouveau dossier\jeunombreadeviner_struct-dev\src\jeunombreadeviner.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"../include/JeuNombreAdeviner.h"
+
