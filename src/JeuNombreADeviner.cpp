@@ -114,9 +114,9 @@ void MajResultatsJoueur(TJoueur &un_joueur, int nbEssais, bool gagne)
 
 void ResultatsJoueur(TJoueur joueur, int& nbsucces, int& nbechec, int& nbessais)
 {
-    nbsucces = joueur.nbPartiesGagnees;
-    nbechec = joueur.nbPartiesJouees - joueur.nbPartiesGagnees;
-    nbessais = joueur.nbTentatives;
+    nbsucces = joueur.nbPartiesGagnees/2;
+    nbechec = (joueur.nbPartiesJouees - joueur.nbPartiesGagnees)/2;
+    nbessais = joueur.nbTentatives/2;
 }
 
 // Nom :Nom

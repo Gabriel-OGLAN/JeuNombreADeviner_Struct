@@ -25,7 +25,7 @@ int main()
     JouerPartie(joueurAcreer, TirerNombreMystere());
     MajResultatsJoueur(joueurAcreer, joueurAcreer.nbTentatives, joueurAcreer.nbPartiesGagnees);
     ResultatsJoueur(joueurAcreer, joueurAcreer.nbPartiesGagnees, joueurAcreer.nbPartiesPerdues, joueurAcreer.nbTentatives);
-    cout << "Tu as mis" << joueurAcreer.nbTentatives << "tentatives, tu as reussi" << joueurAcreer.nbPartiesGagnees << "et tu as perdu" << joueurAcreer.nbPartiesPerdues << "parties.";
+    cout << "Tu as mis " << joueurAcreer.nbTentatives << " tentatives, tu as reussi " << joueurAcreer.nbPartiesGagnees << " parties, et tu as perdu " << joueurAcreer.nbPartiesPerdues << " parties.";
     return 0;
 }
 
