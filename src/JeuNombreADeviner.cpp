@@ -2,14 +2,17 @@
 // Nom du projet: Jeu du nombre à deviner
 // Nom du fichier: JeuNombreADeviner.cpp
 // Version : 1.0
-// Nom du programmeur: G Oglan
+// Nom du programmeur: MP Pinaud - G Oglan
 // Date de création : 25/01/2021
 // Rôle du fichier: Contient le code des fonctions du jeu
 // Nom des composants utilises: JeuNombreADeviner.h
 //                              iostream
 //                              ctime
 //                              cstdlib
-// Historique du fichier:
+// Historique du fichier: 25/01/2021 : création des fonctions et des commentaires par MP Pinaud
+//                        01/02/2021 : création de la fonction JouerPartie par G Oglan
+//                        08/02/2021 : finalisation de la fonction main par G Oglan
+//                        10/02/2021 : vérification finale du code, corrections mineures et production de la recette par G Oglan
 /*************************************************/
 #include <iostream>
 #include <cstdlib>
@@ -114,9 +117,9 @@ void MajResultatsJoueur(TJoueur &un_joueur, int nbEssais, bool gagne)
 
 void ResultatsJoueur(TJoueur joueur, int& nbsucces, int& nbechec, int& nbessais)
 {
-    nbsucces = joueur.nbPartiesGagnees;
-    nbechec = joueur.nbPartiesJouees - joueur.nbPartiesGagnees;
-    nbessais = joueur.nbTentatives;
+    nbsucces = (joueur.nbPartiesGagnees)/2;
+    nbechec = (joueur.nbPartiesJouees - joueur.nbPartiesGagnees)/2;
+    nbessais = (joueur.nbTentatives)/2;
 }
 
 // Nom :Nom

@@ -1,13 +1,18 @@
 /*************************************************/
 // Nom du projet: Jeu du nombre à deviner
-// Nom du fichier: JeuNombreADeviner.h
+// Nom du fichier: JeuNombreADeviner.cpp
 // Version : 1.0
-// Nom du programmeur: G Oglan
+// Nom du programmeur: MP Pinaud - G Oglan
 // Date de création : 25/01/2021
-// Rôle du fichier: Contient la déclaration du type pour représenter un joueur
-// et les fonctions concernant le jeu
-// Nom des composants utilises: string
-// Historique du fichier:
+// Rôle du fichier: Contient le code des fonctions du jeu
+// Nom des composants utilises: JeuNombreADeviner.h
+//                              iostream
+//                              ctime
+//                              cstdlib
+// Historique du fichier: 25/01/2021 : création des fonctions et des commentaires par MP Pinaud
+//                        01/02/2021 : création de la fonction JouerPartie par G Oglan
+//                        08/02/2021 : finalisation de la fonction main par G Oglan
+//                        10/02/2021 : vérification finale du code, corrections mineures et production de la recette par G Oglan
 /*************************************************/
 #include <string>
 using namespace std;
