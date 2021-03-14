@@ -2,11 +2,12 @@
 // Nom du projet: Jeu du nombre à deviner
 // Nom du fichier: Partie.h
 // Version : 1.0
-// Nom du programmeur: MP Pinaud
+// Nom du programmeur: MP Pinaud et G Oglan
 // Date de création : 05/02/2021
 // Rôle du fichier: Contient la déclaration de attributs et méthodes de la classe qui représente une partie
 // Nom des composants utilises: string, la classe CJoueur
-// Historique du fichier:
+// Historique du fichier: 03/03/2021, ajout d'un 2e joueur par g oglan
+//                        14/03/2021, ajout du destructeur par g oglan
 /*************************************************/
 #include <string>
 using namespace std;

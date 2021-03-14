@@ -2,13 +2,14 @@
 // Nom du projet: Jeu du nombre à deviner
 // Nom du fichier: Partie.cpp
 // Version : 1.0
-// Nom du programmeur: MP Pinaud
+// Nom du programmeur: MP Pinaud et G Oglan
 // Date de création : 05/02/2021
 // Rôle du fichier: Contient le code des méthodes d'une partie
 // Nom des composants utilises: CJoueur
 //                              iostream
 //                              ctime
-// Historique du fichier:
+// Historique du fichier: 03/03/2021, ajout d'un 2e joueur par g oglan
+//                        14/03/2021, ajout du destructeur par g oglan
 /*************************************************/
 
 #include <cstdlib>

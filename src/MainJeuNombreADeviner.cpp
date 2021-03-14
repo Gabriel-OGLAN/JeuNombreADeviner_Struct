@@ -9,6 +9,7 @@
 //                              CJoueur
 //                              iostream
 // Historique du fichier: 03/03/2021, ajout d'un 2e joueur par g oglan
+//                        14/03/2021, ajout du destructeur par g oglan
 /*************************************************/
 #include <iostream>
 using namespace std;

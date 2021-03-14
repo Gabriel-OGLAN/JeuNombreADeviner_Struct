@@ -2,11 +2,12 @@
 // Nom du projet: Jeu du nombre à deviner
 // Nom du fichier: Joueur.cpp
 // Version : 1.0
-// Nom du programmeur: MP Pinaud
+// Nom du programmeur: MP Pinaud et G Oglan
 // Date de création : 05/02/2021
 // Rôle du fichier: Contient le code des méthodes du joueur
 // Nom des composants utilises:
-// Historique du fichier:
+// Historique du fichier: 03/03/2021, ajout d'un 2e joueur par g oglan
+//                        14/03/2021, ajout du destructeur par g oglan
 /*************************************************/
 #include <iostream>
 using namespace std;
@@ -38,7 +39,7 @@ using namespace std;
 
     CJoueur::~CJoueur()
     {
-        cout << "Le joueur de nom" << this->nom << " va etre detruit" << endl;
+        cout << "Le joueur de nom " << this->nom << " et d'adresse " << this << " va etre detruit " << endl;
     }
 
 
