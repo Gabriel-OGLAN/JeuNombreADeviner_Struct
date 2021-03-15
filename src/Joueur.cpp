@@ -83,10 +83,8 @@ using namespace std;
 
     // Nom : MoyenneEssais
     // Rôle : indique la moyenne du nombre d'essais d'un joueur
-    // Paramètres de sortie:
-    //                      - la moyenne du nombre d'essais
-    // Entrée :
-    //            -le nombre d'essais et le nombre de parties jouées
+    // Valeur de retour : la moyenne du nombre d'essais
+    // Entrée : le joueur dont on veut la moyenne
 
     float CJoueur::MoyenneEssais()
     {
@@ -94,20 +92,24 @@ using namespace std;
         moyenne = (float) this->nbTentatives / this->nbPartiesGagnees;
         return moyenne;
     }
+
     // Nom :Nom
     // Rôle : retourne le nom du joueur
-    // Paramètres d'entrée: le joueur dont on veut le nom
     // Valeur de retour : nom du joueur
     // Entrée : le joueur dont on veut le nom
 
     string CJoueur::Nom()
     {
-
         return this->nom;
     }
+
+    // Nom : Prenom
+    // Rôle : retourne le prénom du joueur
+    // Valeur de retour : prénom du joueur
+    // Entrée : le joueur dont on veut le prénom
+
     string CJoueur::Prenom()
     {
-
         return this->prenom;
     }
 

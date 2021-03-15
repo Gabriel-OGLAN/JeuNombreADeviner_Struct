@@ -61,20 +61,22 @@ class CJoueur {
 
     // Nom : MoyenneEssais
     // Rôle : indique la moyenne du nombre d'essais d'un joueur
-    // valeur de retour :
-    //                      - la moyenne du nombre d'essais
-    // Entrée :
-    //            -le nombre d'essais et le nombre de parties jouées
+    // Valeur de retour : la moyenne du nombre d'essais
+    // Entrée : le joueur dont on veut la moyenne
 
     float MoyenneEssais();
 
     // Nom :Nom
-    // Rôle : retourne le nom d'un joueur
-    // Entrée: le joueur dont on veut le nom
+    // Rôle : retourne le nom du joueur
     // Valeur de retour : nom du joueur
     // Entrée : le joueur dont on veut le nom
 
     string Nom();
+
+    // Nom : Prenom
+    // Rôle : retourne le prénom du joueur
+    // Valeur de retour : prénom du joueur
+    // Entrée : le joueur dont on veut le prénom
 
     string Prenom();
 
