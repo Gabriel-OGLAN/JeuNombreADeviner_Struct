@@ -1,4 +1,5 @@
 #include "CDate.h"
+#include <string>
 
 class CMeasure
 {

@@ -1,13 +1,23 @@
 # depslib dependency file v1.0
-1619399682 source:c:\users\disquedurdupoker\desktop\cmeasure\cdate.cpp
+1619988482 source:c:\users\disquedurdupoker\desktop\cmeasure\cdate.cpp
 	<time.h>
 	<iostream>
 	"CDate.h"
 
 1619399448 c:\users\disquedurdupoker\desktop\cmeasure\cdate.h
 
-1619441164 source:c:\users\disquedurdupoker\desktop\cmeasure\cmeasure.cpp
-
-1584209020 source:c:\users\disquedurdupoker\desktop\cmeasure\main.cpp
+1619988256 source:c:\users\disquedurdupoker\desktop\cmeasure\cmeasure.cpp
+	<string>
 	<iostream>
+	"CDate.h"
+	"CMeasure.h"
+
+1619988474 source:c:\users\disquedurdupoker\desktop\cmeasure\main.cpp
+	<iostream>
+	"CDate.h"
+	"CMeasure.h"
+
+1619986277 c:\users\disquedurdupoker\desktop\cmeasure\cmeasure.h
+	"CDate.h"
+	<string>
 

@@ -1,4 +1,4 @@
-#include <time.h>
+#include <string>
 #include <iostream>
 using namespace std;
 
@@ -26,4 +26,44 @@ float CMeasure::getVal()
 CDate CMeasure::getDate()
 {
     return this->date;
+}
+
+bool CMeasure::operator < (const CMeasure &mes)
+{
+    if (this->value < mes.value)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool CMeasure::operator > (const CMeasure &mes)
+{
+    if (this->value > mes.value)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool CMeasure::operator == (const CMeasure &mes)
+{
+    if (this->value == mes.value)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+CMeasure::~CMeasure()
+{
 }
